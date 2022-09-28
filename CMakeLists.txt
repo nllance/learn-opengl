@@ -6,8 +6,7 @@ set(OpenGL_GL_PREFERENCE GLVND)
 
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
-find_package(GLEW REQUIRED)
 
-add_executable(out modelling.cpp)
+add_executable(out hello_window.cpp glad.c)
 
-target_link_libraries(out glfw GLEW::GLEW OpenGL::GL)
+target_link_libraries(out glfw OpenGL::GL)

@@ -1,3 +1,0 @@
-/home/lawrence/school/year_3/3gc3/test/build/CMakeFiles/out.dir
-/home/lawrence/school/year_3/3gc3/test/build/CMakeFiles/edit_cache.dir
-/home/lawrence/school/year_3/3gc3/test/build/CMakeFiles/rebuild_cache.dir
