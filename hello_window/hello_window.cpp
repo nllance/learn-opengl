@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-void framebufferSizeCallback(GLFWwindow* window, int width, int height);
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 
 
@@ -24,7 +24,7 @@ int main(void) {
         glfwTerminate();
         return -1;
     }
-    // Mkae the context of `window` the main context on the current thread
+    // Make the context of `window` the main context on the current thread
     glfwMakeContextCurrent(window);
 
     // Initialize GLAD
@@ -38,7 +38,7 @@ int main(void) {
     // Last two params = width and height
     glViewport(0, 0, 800, 600);
     // Call on every window resize
-    glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     // Render loop, keeps running until told to stop
     // Check at the start of each loop if GLFW has been told to close
@@ -80,7 +80,7 @@ int main(void) {
 
 // When the user resizes the window, the viewport should also be resized
 // This is called each time the window is resized
-void framebufferSizeCallback(GLFWwindow* window, int width, int height) {
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
 }
 
